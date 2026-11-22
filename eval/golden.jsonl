@@ -1,0 +1,16 @@
+{"question": "La notation sociale des citoyens est-elle autorisée ?", "expected_ref": "Article 5"}
+{"question": "Peut-on utiliser la reconnaissance des émotions des salariés au travail ?", "expected_ref": "Article 5"}
+{"question": "Quelle est l'amende maximale en cas de pratique interdite ?", "expected_ref": "Article 99"}
+{"question": "Les amendes sont-elles plafonnées pour les PME ?", "expected_ref": "Article 99"}
+{"question": "Combien de temps un déployeur doit-il conserver les journaux ?", "expected_ref": "Article 26"}
+{"question": "Faut-il prévenir les représentants des travailleurs avant de déployer une IA à haut risque ?", "expected_ref": "Article 26"}
+{"question": "Un chatbot doit-il indiquer à l'utilisateur qu'il est une IA ?", "expected_ref": "Article 50"}
+{"question": "Quelles obligations pour un hypertrucage ?", "expected_ref": "Article 50"}
+{"question": "Un outil de tri des candidatures pour le recrutement est-il à haut risque ?", "expected_ref": "Annexe III"}
+{"question": "La notation de crédit des particuliers est-elle un domaine à haut risque ?", "expected_ref": "Annexe III"}
+{"question": "Quand un système de l'annexe III échappe-t-il à la qualification de haut risque ?", "expected_ref": "Article 6"}
+{"question": "Quelle est la définition d'un déployeur ?", "expected_ref": "Article 3"}
+{"question": "Que doit contenir le système de gestion des risques ?", "expected_ref": "Article 9"}
+{"question": "Quels critères de qualité pour les jeux de données d'entraînement ?", "expected_ref": "Article 10"}
+{"question": "Qui doit pouvoir interrompre le fonctionnement du système dans le cadre du contrôle humain ?", "expected_ref": "Article 14"}
+{"question": "Que décrit la notice d'utilisation fournie aux déployeurs ?", "expected_ref": "Article 13"}

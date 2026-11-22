@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - run: pip install -e ".[dev]"
+      - run: ruff check .
+      - run: ruff format --check .
+      - run: pytest -q
+      - name: Qualité de la recherche (seuil 0.9)
+        run: ai-act eval --min-hit-rate 0.9
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t ai-act-assistant .
+      - name: Le conteneur démarre et répond
+        run: |
+          docker run -d --name app -p 8000:8000 ai-act-assistant
+          for i in $(seq 1 20); do
+            curl -fs http://127.0.0.1:8000/health && exit 0
+            sleep 1
+          done
+          docker logs app
+          exit 1
