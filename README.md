@@ -193,7 +193,10 @@ de filet contre les régressions, pas de preuve de qualité sur le règlement co
 À lire avant toute réutilisation : [docs/limites.md](docs/limites.md). En résumé :
 
 - les fournisseurs Anthropic et Azure OpenAI ne sont pas couverts par les tests automatiques ;
-- la qualité des réponses rédigées n'est pas encore mesurée, seule la recherche l'est ;
+- ce dépôt ne mesure que la recherche ; les réponses rédigées, le refus du hors sujet, la mise
+  en relecture et la résistance aux injections sont évalués par
+  [agent-eval-bench](https://github.com/YannisBouharaoua/agent-eval-bench), qui fournit un
+  jeu de 26 cas pour cet agent ;
 - le journal d'audit contient les questions en clair, donc potentiellement des données
   personnelles ;
 - ce projet est une aide à la lecture du règlement, pas un avis juridique.

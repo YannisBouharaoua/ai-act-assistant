@@ -8,8 +8,8 @@ Ce document liste ce que le projet ne fait pas ou ne garantit pas.
   été fourni au modèle. Il ne vérifie pas que la phrase rédigée dit la même chose que
   l'article. Un modèle peut citer le bon article et en déformer le sens.
 - **La qualité des réponses rédigées n'est pas mesurée.** `make eval` mesure la recherche
-  seule. Une évaluation des réponses (fidélité, exhaustivité, refus à bon escient) reste à
-  construire.
+  seule. Les réponses sont évaluées à part, par
+  [agent-eval-bench](https://github.com/YannisBouharaoua/agent-eval-bench).
 - **Le tri peut laisser passer une qualification.** Une description de système formulée comme
   une question générale est traitée comme une demande d'information, sans relecture
   obligatoire.
